@@ -19,9 +19,9 @@ def load_data(nrows):
 # 데이터 가져오는 부분
 data_load_state = st.text('Loading data...')
 data = load_data(10000)
-
 data_load_state.text("Done! (using st.cache_data)")
 
+# 데이터 가져오는 부분2
 if st.checkbox('Show raw data'):
     st.subheader('Raw data')
     st.write(data)
